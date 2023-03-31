@@ -1,0 +1,83 @@
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: brown;
+  align-content: center;
+}
+
+ video {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+a{
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  align-content: center;
+  margin-top: 10px;
+  
+
+}
+
+button:hover {
+  background-color: #f5a33f;
+}
+
+a.button {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* styles for the video player */
+.video-container {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.audio-container{
+position: absolute;
+margin-left: 46rem;
+margin-top: 100px;
+
+}
+
+.audio-player{
+  position: absolute;
+  width: 25px;
+  height:11px ;
+  margin-left: 255px;
+
+}
+
+.video-player {
+position: absolute;
+top: 12px;
+left: 12px;
+width: 1280px;
+height: 720px;
+background-color: #000;
+margin-left: 255px;
+}
+
