@@ -24,12 +24,12 @@ app.get('/', (req, res) => {
 app.get('/contact', (req, res) => {
 
   const audioPath = '/nose.ogg';
-  const captionPath = '/subtitle.vtt';
+  const captionPath = '/toes.vtt';
   const audioLabel = 'Head, Shoulders, knees and toes song';
   const subtitles = subtitle.parse(req.get(captionPath));
-  res.render('audio', { audioPath, captionPath, audioLabel, subtitle });
+  // res.render('audio', { audioPath, captionPath, audioLabel, subtitle });
 
-    // res.sendFile(__dirname + '/contact.html');
+    res.sendFile(__dirname + '/contact.html');
 });
 
 
@@ -38,8 +38,8 @@ app.get('/video', (req, res) => {
   const captionPath = '/toes.vtt';
   const videoLabel = 'Head, Shoulders, Knees and Toes';
   const subtitles = subtitle.parse(req.get(captionPath));
-  res.render('video', { videoPath, captionPath, videoLabel });
-  // res.sendFile(__dirname + '/video.html');
+  // res.render('video', { videoPath, captionPath, videoLabel });
+  res.sendFile(__dirname + '/video.html');
 });
 
 // set up the server to listen for incoming connections at this port 
