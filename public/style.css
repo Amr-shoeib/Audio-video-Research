@@ -81,3 +81,28 @@ background-color: #000;
 margin-left: 255px;
 }
 
+.audio-player {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+audio::-webkit-media-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button {
+  width: 100px;
+  height: 100px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
